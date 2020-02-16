@@ -55,3 +55,17 @@ where lower(substr(city,1,1)) not in ('a','e','i','u','o')
 and substr(city,-1) not in ('a','e','i','u','o');
                    
                    
+--- 16 th problem 
+select round(min(lat_n),4) from station 
+where lat_n>38.7780;
+
+--- 17 th problem 
+ 
+select round(long_w,4) from station 
+where lat_n = (select min(lat_n) from station where lat_n >38.7780);
+                   
+                   
+---  18th problem 
+
+                   
+                   
