@@ -2,7 +2,7 @@
 SELECT CITY,STATE FROM STATION;
 
 --- 2nd  problem 
-
+select round(sum(lat_n),2), round(sum(long_w),2) from station;
 
 --- 3rd problem
 SELECT DISTINCT CITY FROM STATION 
